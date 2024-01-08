@@ -110,13 +110,13 @@ function searchHandler(e) {
 function highligtMatch(word, searchTerm) {
   const startIndex = word.toLowerCase().indexOf(searchTerm);
   if (startIndex !== -1) {
-    const hilightedWord =
+    const highlightedWord =
       word.substring(0, startIndex) +
       "<span class='has-suggestions'>" +
       word.substring(startIndex, startIndex + searchTerm.length) +
       "</span>" +
       word.substring(startIndex + searchTerm.length);
-    return hilightedWord;
+    return highlightedWord;
   }
 }
 
